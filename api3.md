@@ -8,7 +8,7 @@ description: Using API3's dAPIs in your Smart Contracts
 
 For more info about API3, check out their [docs](https://docs.api3.org/).
 
-# Using dAPIs in your Smart Contracts
+# Using dAPIs - API3 Datafeeds
 
 [dAPIs](https://docs.api3.org/dapis/) are continuously updated streams of off-chain data, such as the latest cryptocurrency, stock and commodity prices. They can power various decentralized applications such as DeFi lending, synthetic assets, stablecoins, derivatives, NFTs and more.
 
@@ -22,22 +22,22 @@ The [API3 Market](https://market.api3.org/dapis) enables users to connect to a d
 
 [*To know more about how dAPIs work, click here*](https://dapi-docs.api3.org/explore/dapis/what-are-dapis.html)
 
-## Types of dAPIs
+<!-- ## Types of dAPIs
 
-### Self-Funded dAPIs
+### Self-funded dAPIs
 Self-funded dAPIs offer developers the opportunity to experience data feeds with
 minimal up-front commitment, providing a low-risk option prior to using a
 managed dAPIs.
 
 ### Managed dAPIs
 Managed dAPIs are sourced from multiple first-party oracles and aggregated using
-a median function. Compared to self-funded dAPIs, **managed dAPIs are monetized**,
-as API3 requires payment in USDC on Ethereum Mainnet to operate them.
+a median function. Compared to Self-funded dAPIs, **managed dAPIs are monetized**,
+as API3 requires payment in USDC on Ethereum Mainnet to operate them. -->
 
-*Follow these steps to use self-funded dAPIs in your smart contracts on the Fantom Network.*
-## Subscribing to self-funded dAPIs
+*Follow these steps to use Self-funded dAPIs in your smart contracts on the Fantom Network.*
+## Subscribing to Self-funded dAPIs
 
-With Self-Funded dAPIs, you can fund the dAPI with your own funds. The amount of gas you supply will determine how long your dAPI will be available for use. If you run out of gas, you can fund the dAPI again to keep it available for use.
+With Self-funded dAPIs, you can fund the dAPI with your own funds. The amount of gas you supply will determine how long your dAPI will be available for use. If you run out of gas, you can fund the dAPI again to keep it available for use.
 
 ### **Exploring and selecting your dAPI**
 
@@ -45,7 +45,7 @@ The [API3 Market](https://market.api3.org/dapis) provides a list of all the dAPI
 
 ### **Funding a sponsor wallet**
 
-Once you have selected your dAPI, you can fund it by using the Market to send funds to the `sponsorWallet`, make sure your:
+Once you have selected your dAPI, you can activate it by using the [API3 Market](https://market.api3.org/) to send FTM to the `sponsorWallet`. Make sure your:
 
 - Wallet is connected to the Market and is the same network as the dAPI you are funding.
 - Balance of the wallet should be greater than the amount you are sending to the `sponsorWallet`.
@@ -54,37 +54,37 @@ Once you have selected your dAPI, you can fund it by using the Market to send fu
 
 To fund the dAPI, you need to click on the **Fund sponsor wallet/Fund Gas** button. Depending upon if a proxy contract is already deployed, you will see a different UI.
 
-![API3 Remix deploy](/img/tools/api3/SS2.png)
+![API3 Remix deploy](/src/SS2.png)
 
 Use the gas estimator to select how much gas is needed by the dAPI. Click on **Send FTM** to send the entered amount to the sponsor wallet of the respective dAPI.
 
-![API3 Remix deploy](/img/tools/api3/SS3.png)
+![API3 Remix deploy](/src/SS3.png)
 
 Once the transaction is broadcasted & confirmed on the blockchain a transaction confirmation screen will appear.
 
-![API3 Remix deploy](/img/tools/api3/SS5.png)
+![API3 Remix deploy](/src/SS5.png)
 
 ### **Deploying a proxy contract to access the dAPI**
 
-Smart contracts can interact and read values from contracts that are already deployed on the blockchain. By deploying a proxy contract via the API3 market, a dAPP can interact and read values from a dAPI like ETH/USD.
+Smart contracts can interact and read values from contracts that are already deployed on the blockchain. By deploying a proxy contract via the API3 Market, a dAPP can interact and read values from a dAPI like ETH/USD.
 
 Note:
 
-- *If a proxy is already deployed for a self-funded dAPI, the dAPP can read the dAPI without having to deploy a proxy contract by using the address of the already deployed proxy contract which will be visible on the API3 market.*
+- *If a proxy is already deployed for a Self-funded dAPI, the dApp can read the dAPI without having to deploy a proxy contract. They do this by using the address of the already deployed proxy contract which will be visible on the API3 Market.*
 
 
-If you are deploying a proxy contract during the funding process, clicking on the **Deploy proxy** button will initiate a transaction to your Metamask that will deploy a proxy contract.
+If you are deploying a proxy contract during the funding process, clicking on the **Deploy proxy/Get Proxy** button will initiate a transaction to your Metamask that will deploy a proxy contract.
 
-![API3 Remix deploy](/img/tools/api3/SS6.png)
+![API3 Remix deploy](/src/SS6.png)
 
 Once the transaction is broadcasted & confirmed on the blockchain, the proxy contract address will be shown on the UI.
 
-![API3 Remix deploy](/img/tools/api3/SS7.png)
+![API3 Remix deploy](/src/SS7.png)
 
 
-## Reading from a self-funded dAPI
+## Reading from a Self-funded dAPI
 
-Here's an example of a basic contract that reads from a self-funded dAPI.
+Here's an example of a basic contract that reads from a Self-funded dAPI.
 
 ```solidity
 // SPDX-License-Identifier: MIT
