@@ -52,12 +52,13 @@ Once you have selected your dAPI, you can activate it by using the [API3 Market]
 
 ![API3 Remix deploy](/src/SS1.png)
 
-To fund the dAPI, you need to click on the **Fund sponsor wallet/Fund Gas** button. Depending upon if a proxy contract is already deployed, you will see a different UI.
+To fund the dAPI, you need to click on the **Fund Gas** button. Depending upon if a proxy contract is already deployed, you will see a different UI.
 
-![API3 Remix deploy](/src/SS2.png)
+![API3 Remix deploy](/src/SS8.png)
 
 Use the gas estimator to select how much gas is needed by the dAPI. Click on **Send FTM** to send the entered amount to the sponsor wallet of the respective dAPI.
 
+![API3 Remix deploy](/src/SS2.png)
 ![API3 Remix deploy](/src/SS3.png)
 
 Once the transaction is broadcasted & confirmed on the blockchain a transaction confirmation screen will appear.
@@ -73,7 +74,7 @@ Note:
 - *If a proxy is already deployed for a Self-funded dAPI, the dApp can read the dAPI without having to deploy a proxy contract. They do this by using the address of the already deployed proxy contract which will be visible on the API3 Market.*
 
 
-If you are deploying a proxy contract during the funding process, clicking on the **Deploy proxy/Get Proxy** button will initiate a transaction to your Metamask that will deploy a proxy contract.
+If you are deploying a proxy contract during the funding process, clicking on the **Get Proxy** button will initiate a transaction to your Metamask that will deploy a proxy contract.
 
 ![API3 Remix deploy](/src/SS6.png)
 
