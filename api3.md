@@ -31,13 +31,13 @@ managed dAPIs.
 
 ### Managed dAPIs
 Managed dAPIs are sourced from multiple first-party oracles and aggregated using
-a median function. Compared to Self-funded dAPIs, **managed dAPIs are monetized**,
+a median function. Compared to self-funded dAPIs, **managed dAPIs are monetized**,
 as API3 requires payment in USDC on Ethereum Mainnet to operate them. -->
 
-*Follow these steps to use Self-funded dAPIs in your smart contracts on the Fantom Network.*
-## Subscribing to Self-funded dAPIs
+*Follow these steps to use self-funded dAPIs in your smart contracts on the Fantom Network.*
+## Subscribing to self-funded dAPIs
 
-With Self-funded dAPIs, you can fund the dAPI with your own funds. The amount of gas you supply will determine how long your dAPI will be available for use. If you run out of gas, you can fund the dAPI again to keep it available for use.
+With self-funded dAPIs, you can fund the dAPI with your own funds. The amount of gas you supply will determine how long your dAPI will be available for use. If you run out of gas, you can fund the dAPI again to keep it available for use.
 
 ### **Exploring and selecting your dAPI**
 
@@ -71,10 +71,10 @@ Smart contracts can interact and read values from contracts that are already dep
 
 Note:
 
-- *If a proxy is already deployed for a Self-funded dAPI, the dApp can read the dAPI without having to deploy a proxy contract. They do this by using the address of the already deployed proxy contract which will be visible on the API3 Market.*
+- *If a proxy is already deployed for a self-funded dAPI, the dApp can read the dAPI without having to deploy a proxy contract. They do this by using the address of the already deployed proxy contract which will be visible on the API3 Market.*
 
 
-If you are deploying a proxy contract during the funding process, clicking on the **Get Proxy** button will initiate a transaction to your Metamask that will deploy a proxy contract.
+If you are deploying a proxy contract during the funding process, clicking on the **Get Proxy** button will initiate a transaction to your MetaMask that will deploy a proxy contract.
 
 ![API3 Remix deploy](/src/SS6.png)
 
@@ -83,9 +83,9 @@ Once the transaction is broadcasted & confirmed on the blockchain, the proxy con
 ![API3 Remix deploy](/src/SS7.png)
 
 
-## Reading from a Self-funded dAPI
+## Reading from a self-funded dAPI
 
-Here's an example of a basic contract that reads from a Self-funded dAPI.
+Here's an example of a basic contract that reads from a self-funded dAPI.
 
 ```solidity
 // SPDX-License-Identifier: MIT
