@@ -10,9 +10,9 @@ For more info about API3, check out their [docs](https://docs.api3.org/).
 
 # Using dAPIs - API3 Datafeeds
 
-[dAPIs](https://docs.api3.org/dapis/) are continuously updated streams of off-chain data, such as the latest cryptocurrency, stock and commodity prices. They can power various decentralized applications such as DeFi lending, synthetic assets, stablecoins, derivatives, NFTs and more.
+[dAPIs](https://docs.api3.org/explore/dapis/what-are-dapis.html) are continuously updated streams of off-chain data, such as the latest cryptocurrency, stock and commodity prices. They can power various decentralized applications such as DeFi lending, synthetic assets, stablecoins, derivatives, NFTs and more.
 
-The data feeds are continuously updated by [first-party oracles](https://dapi-docs.api3.org/explore/introduction/first-party.html) using signed data. dApp owners can read the on-chain value of any dAPI in realtime.
+The data feeds are continuously updated by [first-party oracles](https://docs.api3.org/explore/introduction/first-party.html) using signed data. dApp owners can read the on-chain value of any dAPI in realtime.
 
 Due to being composed of first-party data feeds, dAPIs offer security, transparency, cost-efficiency and scalability in a turn-key package.
 
@@ -20,7 +20,7 @@ The [API3 Market](https://market.api3.org/dapis) enables users to connect to a d
 
 ![](/src/SS4.png)
 
-[*To know more about how dAPIs work, click here*](https://dapi-docs.api3.org/explore/dapis/what-are-dapis.html)
+[*To know more about how dAPIs work, click here*](https://docs.api3.org/explore/dapis/what-are-dapis.html)
 
 <!-- ## Types of dAPIs
 
@@ -120,7 +120,7 @@ contract DataFeedReaderExample is Ownable {
 
 - `readDataFeed()` is a view function that returns the latest price of the set dAPI.
 
-You can read more about dAPIs [here](https://dapi-docs.api3.org/). 
+You can read more about dAPIs [here](https://docs.api3.org/guides/dapis/subscribing-self-funded-dapis/). 
 
 ## [Try deploying it on Remix!](https://remix.ethereum.org/#url=https://gist.githubusercontent.com/vanshwassan/1ec4230956a78c73a00768180cba3649/raw/176b4a3781d55d6fb2d2ad380be0c26f412a7e3c/DapiReader.sol)
 
@@ -129,7 +129,7 @@ You can read more about dAPIs [here](https://dapi-docs.api3.org/).
 Here are some additional developer resources
 
 - [API3 Docs](https://docs.api3.org/)
-- [dAPI Docs](https://dapi-docs.api3.org/)
-- [QRNG Docs](https://docs.api3.org/qrng/)
+- [dAPI Docs](https://docs.api3.org/explore/dapis/what-are-dapis.html)
+- [QRNG Docs](https://docs.api3.org/explore/qrng/)
 - [Github](https://github.com/api3dao/)
 - [Medium](https://medium.com/api3)
